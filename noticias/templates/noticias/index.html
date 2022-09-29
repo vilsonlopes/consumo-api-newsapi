@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Notícias{% endblock %}
+
+{% block content %}
+ <section class="container">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><h1>Principais Notícias</h1></li>
+          </ul>
+        </nav>
+    </section>
+
+    <div class="container">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">TÍTULO</th>
+            <th scope="col">AUTHOR </th>
+            <th scope="col">ARTIGO </th>
+            <th scope="col">LINK </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for noticia in noticias %}
+            <tr>
+              <th scope="row">{{ noticias.title }}</th>
+              <td>{{ noticias.author }}</td>
+              <td>{{ noticias.content }}</td>
+              <td>{{ noticias.url}}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+{% endblock %}
