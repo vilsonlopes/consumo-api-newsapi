@@ -22,14 +22,54 @@
           </tr>
         </thead>
         <tbody>
-          {% for noticia in noticias %}
+{#          {% for noticia in noticias %}#}
             <tr>
               <th scope="row">{{ noticias.title }}</th>
               <td>{{ noticias.author }}</td>
               <td>{{ noticias.content }}</td>
-              <td>{{ noticias.url}}</td>
+              <td><a href="{{ noticias.url}}">Link da notícia</a></td>
             </tr>
-          {% endfor %}
+{#          {% endfor %}#}
+        </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">{{ noticias_1.title }}</th>
+              <td>{{ noticias_1.author }}</td>
+              <td>{{ noticias_1.content }}</td>
+              <td><a href="{{ noticias_1.url}}">Link da notícia</a></td>
+            </tr>
+        </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">{{ noticias_2.title }}</th>
+              <td>{{ noticias_2.author }}</td>
+              <td>{{ noticias_2.content }}</td>
+              <td><a href="{{ noticias_2.url}}">Link da notícia</a></td>
+            </tr>
+        </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">{{ noticias_3.title }}</th>
+              <td>{{ noticias_3.author }}</td>
+              <td>{{ noticias_3.content }}</td>
+              <td><a href="{{ noticias_3.url}}">Link da notícia</a></td>
+            </tr>
+        </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">{{ noticias_4.title }}</th>
+              <td>{{ noticias_4.author }}</td>
+              <td>{{ noticias_4.content }}</td>
+              <td><a href="{{ noticias_4.url}}">Link da notícia</a></td>
+            </tr>
+        </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">{{ noticias_5.title }}</th>
+              <td>{{ noticias_5.author }}</td>
+              <td>{{ noticias_5.content }}</td>
+              <td><a href="{{ noticias_5.url}}">Link da notícia</a></td>
+            </tr>
         </tbody>
       </table>
     </div>

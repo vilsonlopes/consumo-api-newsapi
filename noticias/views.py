@@ -12,5 +12,12 @@ def index(request):
     response = requests.get(url)
     dados = response.json()
     noticias = dados['articles'][0]
+    noticias_1 = dados['articles'][1]
+    noticias_2 = dados['articles'][2]
+    noticias_3 = dados['articles'][3]
+    noticias_4 = dados['articles'][4]
+    noticias_5 = dados['articles'][5]
 
-    return render(request, 'noticias/index.html', {'noticias': noticias})
+    return render(request, 'noticias/index.html', {'noticias': noticias, 'noticias_1': noticias_1,
+                                                   'noticias_2': noticias_2, 'noticias_3': noticias_3,
+                                                   'noticias_4': noticias_4, 'noticias_5': noticias_5})
